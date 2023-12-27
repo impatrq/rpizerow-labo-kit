@@ -1978,7 +1978,7 @@
     (property "Value" "LED_GKBR" (at 131.445 53.34 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 131.445 41.91 0)
+    (property "Footprint" "LED_THT:LED_D5.0mm-4_RGB" (at 131.445 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 131.445 41.91 0)
