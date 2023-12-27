@@ -1,5 +1,5 @@
-"Source:","/Users/carlassaraf/Downloads/Pi Zero Mother/rpizerow_kit_desarrollo.kicad_sch"
-"Date:","2023 December 26, Tuesday 22:59:36"
+"Source:","/Users/carlassaraf/Downloads/rpizerow_kit_desarrollo/rpizerow_kit_desarrollo.kicad_sch"
+"Date:","2023 December 26, Tuesday 23:32:30"
 "Tool:","Eeschema 7.0.1-0"
 "Generator:","/Applications/KiCad/KiCad.app/Contents/SharedSupport/plugins/bom_csv_grouped_by_value.py"
 "Component Count:","18"
@@ -8,7 +8,7 @@
 
 "Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","DNP"
 "1","1","BZ1","Buzzer","Device:Buzzer","Buzzer_Beeper:Buzzer_12x9.5RM7.6","~",""
-"2","1","D1","LED_GKBR","Device:LED_GKBR","","~",""
+"2","1","D1","LED_GKBR","Device:LED_GKBR","LED_THT:LED_D5.0mm-4_RGB","~",""
 "3","1","J1","Conector USB","Connector:Conn_01x05_Pin","Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal","~",""
 "4","1","J2","Screw_Terminal_01x02","Connector:Screw_Terminal_01x02","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal","~",""
 "5","1","LDR1","10K","Sensor_Optical:A9050","OptoDevice:R_LDR_5.0x4.1mm_P3mm_Vertical","http://cdn-reichelt.de/documents/datenblatt/A500/A90xxxx%23PE.pdf",""
