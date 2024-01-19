@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/carlassaraf/Documents/rpizerow-labo-kit/rpizerow_kit_desarrollo.kicad_sch</source>
-    <date>2024 January 18, Thursday 23:48:41</date>
+    <date>2024 January 18, Thursday 23:51:35</date>
     <tool>Eeschema 7.0.1-0</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -113,7 +113,7 @@
       <tstamps>7246b77b-f9fa-4a9b-ba7e-3c3275e6febe</tstamps>
     </comp>
     <comp ref="R3">
-      <value>220</value>
+      <value>220R</value>
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
@@ -124,7 +124,7 @@
       <tstamps>9b9850c1-fb6f-43fd-b33b-5fd68e0e71be</tstamps>
     </comp>
     <comp ref="R4">
-      <value>220</value>
+      <value>220R</value>
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
@@ -135,7 +135,7 @@
       <tstamps>331bba39-bb2c-4179-a853-a3e81698e81b</tstamps>
     </comp>
     <comp ref="R5">
-      <value>220</value>
+      <value>220R</value>
       <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
