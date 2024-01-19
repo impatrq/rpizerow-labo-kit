@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/Users/carlassaraf/Downloads/rpizerow_kit_desarrollo/rpizerow_kit_desarrollo.kicad_sch</source>
-    <date>2023 December 26, Tuesday 23:32:30</date>
+    <source>/Users/carlassaraf/Documents/rpizerow-labo-kit/rpizerow_kit_desarrollo.kicad_sch</source>
+    <date>2024 January 18, Thursday 23:48:41</date>
     <tool>Eeschema 7.0.1-0</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -36,15 +36,14 @@
       <tstamps>39d0b542-c333-4ba5-af62-129b6e616126</tstamps>
     </comp>
     <comp ref="D1">
-      <value>LED_GKBR</value>
-      <footprint>LED_THT:LED_D5.0mm-4_RGB</footprint>
-      <libsource lib="Device" part="LED_GKBR" description="RGB LED, green/cathode/blue/red"/>
+      <value>LED_RKGB</value>
+      <libsource lib="Device" part="LED_RKGB" description="RGB LED, red/cathode/green/blue"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="rpizerow_kit_desarrollo.kicad_sch"/>
-      <property name="ki_description" value="RGB LED, green/cathode/blue/red"/>
+      <property name="ki_description" value="RGB LED, red/cathode/green/blue"/>
       <property name="ki_keywords" value="LED RGB diode"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>0b7a1f79-0df3-4469-b751-524ca2b90e41</tstamps>
+      <tstamps>a4b90e95-222e-4258-9724-1a86a3779f1a</tstamps>
     </comp>
     <comp ref="J1">
       <value>Conector USB</value>
@@ -320,8 +319,8 @@
         <pin num="2" name="+" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Device" part="LED_GKBR">
-      <description>RGB LED, green/cathode/blue/red</description>
+    <libpart lib="Device" part="LED_RKGB">
+      <description>RGB LED, red/cathode/green/blue</description>
       <docs>~</docs>
       <footprints>
         <fp>LED*</fp>
@@ -330,14 +329,14 @@
       </footprints>
       <fields>
         <field name="Reference">D</field>
-        <field name="Value">LED_GKBR</field>
+        <field name="Value">LED_RKGB</field>
         <field name="Datasheet">~</field>
       </fields>
       <pins>
-        <pin num="1" name="GA" type="passive"/>
+        <pin num="1" name="RA" type="passive"/>
         <pin num="2" name="K" type="passive"/>
-        <pin num="3" name="BA" type="passive"/>
-        <pin num="4" name="RA" type="passive"/>
+        <pin num="3" name="GA" type="passive"/>
+        <pin num="4" name="BA" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="R">
@@ -519,15 +518,24 @@
       <node ref="RV1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="U2" pin="7" pinfunction="AIN3" pintype="input"/>
     </net>
-    <net code="6" name="CLK">
+    <net code="6" name="BUTTON">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="GPIO18" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="BUZZER">
+      <node ref="BZ1" pin="1" pinfunction="-" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="GPIO22" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="CLK">
       <node ref="U1" pin="32" pinfunction="GPIO12" pintype="bidirectional"/>
       <node ref="U4" pin="4" pinfunction="Pin_4" pintype="passive"/>
     </net>
-    <net code="7" name="DIO">
+    <net code="9" name="DIO">
       <node ref="U1" pin="22" pinfunction="GPIO25" pintype="bidirectional"/>
       <node ref="U4" pin="3" pinfunction="Pin_3" pintype="passive"/>
     </net>
-    <net code="8" name="GND">
+    <net code="10" name="GND">
       <node ref="BZ1" pin="2" pinfunction="+" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="K" pintype="passive"/>
       <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
@@ -549,43 +557,34 @@
       <node ref="U3" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U4" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="9" name="I2C SCL">
+    <net code="11" name="I2C SCL">
       <node ref="U1" pin="5" pinfunction="GPIO03_SCL1_I2C" pintype="bidirectional"/>
       <node ref="U2" pin="10" pinfunction="SCL" pintype="input"/>
       <node ref="U3" pin="3" pinfunction="Pin_3" pintype="passive"/>
     </net>
-    <net code="10" name="I2C SDA">
+    <net code="12" name="I2C SDA">
       <node ref="U1" pin="3" pinfunction="GPIO02_SDA1_I2C" pintype="bidirectional"/>
       <node ref="U2" pin="9" pinfunction="SDA" pintype="bidirectional"/>
       <node ref="U3" pin="4" pinfunction="Pin_4" pintype="passive"/>
     </net>
-    <net code="11" name="I{slash}O 12">
-      <node ref="BZ1" pin="1" pinfunction="-" pintype="passive"/>
-      <node ref="U1" pin="15" pinfunction="GPIO22" pintype="bidirectional"/>
-    </net>
-    <net code="12" name="I{slash}O 13">
-      <node ref="R6" pin="1" pintype="passive"/>
-      <node ref="SW1" pin="1" pintype="passive"/>
-      <node ref="U1" pin="12" pinfunction="GPIO18" pintype="bidirectional"/>
-    </net>
     <net code="13" name="Net-(D1-BA)">
-      <node ref="D1" pin="3" pinfunction="BA" pintype="passive"/>
-      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="D1" pin="4" pinfunction="BA" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
     </net>
     <net code="14" name="Net-(D1-GA)">
-      <node ref="D1" pin="1" pinfunction="GA" pintype="passive"/>
+      <node ref="D1" pin="3" pinfunction="GA" pintype="passive"/>
       <node ref="R4" pin="2" pintype="passive"/>
     </net>
     <net code="15" name="Net-(D1-RA)">
-      <node ref="D1" pin="4" pinfunction="RA" pintype="passive"/>
-      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="RA" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
     </net>
     <net code="16" name="PWM 1">
-      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U1" pin="33" pinfunction="GPIO13" pintype="bidirectional"/>
     </net>
     <net code="17" name="PWM 2">
-      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U1" pin="35" pinfunction="GPIO19" pintype="bidirectional"/>
     </net>
     <net code="18" name="PWM 3">
